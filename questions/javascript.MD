@@ -182,18 +182,23 @@ For more info please check
         Answer
     </summary>
 
-The anonymous functions are those function created with the function constructor and hasn't any given name, those functions are commonly used as parameters to other functions.
+Anonymous functions (also called lambda functions) are functions where the name is omitted. They are commonly used as parameters to other functions or stored in a variable.
 
 ```js
-//declaration
-function() {
-    console.log('Hi from anonymous my function');
-}
-
 //common use
 setTimeout(function() {
     console.log('Hi from my anonymous function');
 }, 300);
+
+// double arrow function
+setTimeout(() => {
+    console.log('Hi from my anonymous function');
+}, 300);
+
+// assigning to a variable
+const myFunc = () => {
+    // do something awesome
+}
 ```
 
 ###### References
